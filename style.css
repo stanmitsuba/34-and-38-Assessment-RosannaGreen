@@ -23,7 +23,7 @@ ul {
 }
 
 #menu {
-  background: white;
+  background: rgba(255,255,255,0.5);
   text-align: center;
   width: 230px;
   height: 100%;
@@ -120,7 +120,7 @@ ul {
   text-align: center;
   border: 5px solid #756458;
   transition-duration: 0.4s;
-  border-radius: 999em;
+  border-radius: 50px;
   cursor: pointer;
   padding: 10px 40px;
   position: relative;
