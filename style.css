@@ -23,7 +23,7 @@ ul {
 }
 
 #menu {
-  background: rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.5);
   text-align: center;
   width: 230px;
   height: 100%;
@@ -110,9 +110,11 @@ ul {
   #menu li {
     display: inline-block;
   }
-/* Everything else */
+
+  /* Everything else */
 }
-.button{
+
+.button {
   background-color: #F4ECE7;
   color: black;
   font-family: Bahnschrift;
@@ -126,14 +128,33 @@ ul {
   position: relative;
   left: 45%;
 }
-p{
+
+p {
   color: black;
   font-family: Bahnschrift;
-  font-size: 1.5vw;  
+  font-size: 1.5vw;
   text-align: center;
 }
-h1{
+
+h1 {
   color: black;
   font-family: Bahnschrift;
-  }
+}
+
 /* Media quaires */
+
+@media only screen and (max-width:600px) {
+ /* .container {
+    
+  } */
+
+  p {
+    font-size: 6vw;
+  }
+
+  .button {
+    position: relative;
+    left: 25%;
+    font-size: 6.5vw;
+  }
+}
