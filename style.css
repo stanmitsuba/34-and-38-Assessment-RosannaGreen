@@ -126,13 +126,11 @@ ul {
   cursor: pointer;
   padding: 10px 40px;
   position: relative;
-  left: 45%;
 }
 
 p {
   color: black;
   font-family: Bahnschrift;
-  font-size: 1.5vw;
   text-align: center;
 }
 
@@ -144,17 +142,45 @@ h1 {
 /* Media quaires */
 
 @media only screen and (max-width:600px) {
- /* .container {
-    
-  } */
-
   p {
     font-size: 6vw;
   }
 
   .button {
-    position: relative;
     left: 25%;
     font-size: 6.5vw;
+  }
+}
+
+@media only screen and (min-width:600px) {
+  p {
+    font-size: 4vw;
+  }
+
+  .button {
+    left: 37%;
+    font-size: 4.5vw;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  p {
+    font-size: 4vw;
+  }
+
+  .button {
+    left: 38%;
+    font-size: 4.5vw;
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  p {
+    font-size: 1.5vw;
+  }
+
+  .button {
+    font-size: 2vw;
+    left: 45%;
   }
 }
