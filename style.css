@@ -187,6 +187,35 @@ footer {
   padding: 10px;
 }
 
+.grid {
+  display: grid;
+}
+
+#bit {
+  text-align:left;
+}
+
+/* drinks */
+#choco {
+  width: 20%;
+}
+
+#rose {
+  width: 20%;
+}
+
+#straw {
+  width: 20%;
+}
+
+#taro {
+  width: 20%;
+}
+
+#lemon {
+  width: 20%;
+}
+
 /* Media quaires */
 
 @media only screen and (max-width:600px) {
