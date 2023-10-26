@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Bubble Tea</title>
   <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" herf="images/logo.png" type="image/x-icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
@@ -19,8 +20,13 @@
           <div class="bar2"></div>
           <div class="bar3"></div>
         </li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About</a></li>
+        <div class="layout">
+          <li><a class="link-1" href="menu.html">Menu</a></li>
+          <li><a class="link-2" href="index.html">
+              <img src="images/logo.png" alt="logo" id="logo"></a>
+          </li>
+          <li><a class="link-3" href="about.html">About</a></li>
+        </div>
       </ul>
     </nav>
   </div>
@@ -28,20 +34,16 @@
   <div class="info">
     <p>Sip on a burst of delightful flavors, as each sip introduces you to a symphony of taste. Whether you're a fan of
       fruity, creamy, or exotic blends, bubble tea offers an endless variety of options to satisfy your cravings!</p>
-    <!--img -->
+    <img src="images/4glass.png" class="glass">
     <p>Whether you're a seasoned bubble tea enthusiast or new to this delightful trend, our inviting ambiance and
       expertly crafted drinks ensure a delightful experience every time. Join us today and experience the joy of bubble
       tea like never before!</p>
-    <a href="menu.html">
-      <button class="button menu">Menu</button>
-    </a>
+    <a href="menu.html" class="button">Menu</a>
     <!--img -->
     <p> Our skilled baristas craft each drink with meticulous care, ensuring every bubble tea experience is a moment to
       savor. Step inside our inviting atmosphere, where friendly smiles and the mesmerizing aroma of freshly brewed tea
       welcome you!</p>
-    <a href="about.html">
-      <button class="button about">About</button>
-    </a>
+    <a href="about.html" class="button">About</a>
   </div>
   <footer>
     <p id="end">Contact us</p>
