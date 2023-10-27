@@ -8,8 +8,8 @@ body {
   margin: 0;
 }
 
-.logo{
-  width:8vw;
+.logo {
+  width: 8vw;
 }
 
 /* index */
@@ -19,7 +19,47 @@ body {
   position: relative;
   transition: all 0.3s;
 }
+
 /* animation */
+.animation {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+marquee{
+  height: 80vh;
+}
+
+.bubble {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #756458;
+  animation-name: bubble;
+  animation-timing-function: ease-in-out;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+@keyframes bubble {
+  0% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: 0.7;
+  }
+
+  55% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
 
 /* containers */
 .home {
@@ -257,11 +297,23 @@ footer {
   #item {
     width: 60vw;
   }
-  
-  .logo{
-    width:30vw;
+
+  .logo {
+    width: 30vw;
   }
-  
+
+  .glass {
+    width: 50vw;
+    margin-left: 20vw;
+  }
+  .animation{
+    position: left;
+    width: 80%;
+    height: 80%;
+  }
+  marquee{
+    height: 50vh;
+  }
 }
 
 @media only screen and (min-width:600px) {
@@ -303,13 +355,28 @@ footer {
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(1, 20vw);
+    grid-template-columns: repeat(2, 20vw);
     grid-gap: 1vw;
     width: 80vw;
-    margin-left: 20vw;
+    margin-left: 30vw;
   }
-  .logo{
-    width:20vw;
+
+  .logo {
+    width: 20vw;
+  }
+
+  .glass {
+    width: 50vw;
+    margin-left: 25vw;
+  }
+  
+  .animation{
+    position: left;
+    width: 80%;
+    height: 80%;
+  }
+  marquee{
+    height: 60vh;
   }
 }
 
@@ -354,8 +421,18 @@ footer {
     width: 80vw;
     margin-left: 20vw;
   }
-  .logo{
-    width:10vw;
+
+  .logo {
+    width: 10vw;
+  }
+
+  .glass {
+    width: 50vw;
+    margin-left: 25vw;
+  }
+  
+  marquee{
+    height: 50vh;
   }
 }
 
@@ -404,7 +481,17 @@ footer {
     width: 80vw;
     margin-left: 20vw;
   }
-  .logo{
-    width:8vw;
+
+  .logo {
+    width: 8vw;
+  }
+
+  .glass {
+    width: 50vw;
+    margin-left: 25vw;
+  }
+  
+  marquee{
+    height: 75vh;
   }
 }
