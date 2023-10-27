@@ -8,8 +8,8 @@ body {
   margin: 0;
 }
 
-a {
-  font-size: 4vw;
+.logo{
+  width:8vw;
 }
 
 /* index */
@@ -19,7 +19,9 @@ a {
   position: relative;
   transition: all 0.3s;
 }
+/* animation */
 
+/* containers */
 .home {
   background-image: url("images/6pink.png");
   background-repeat: no-repeat;
@@ -49,39 +51,14 @@ ul {
   list-style-type: none;
 }
 
-.link-1 {
-  grid-area: menu;
-  height: 15vh;
-  width: 10vw;
-}
-
-.link-2 {
-  grid-area: logo;
-  height: 15vh;
-  width: 10vw;
-}
-
-.link-3 {
-  grid-area: about;
-  height: 15vh;
-  width: 10vw;
-}
-
-.layout {
-  display: grid;
-  grid-template-areas: 'menu logo about';
-  width: 30vw;
-  margin-left: 30vw;
-}
-
 #menu {
   background: rgba(255, 255, 255, 0.5);
   text-align: center;
-  width: 30vw;
+  width: 230px;
   height: auto;
   position: fixed;
   margin: 0;
-  right: -30vw;
+  right: -230px;
   padding: 0px;
 }
 
@@ -94,7 +71,7 @@ ul {
   display: block;
   color: black;
   font-family: Bahnschrift;
-  font-size: rem;
+  font-size: 2.5rem;
   padding: 10px 30px;
   border: 2px solid transparent;
   text-decoration: none;
@@ -104,7 +81,7 @@ ul {
 #menu li a:hover,
 #menu li a:focus {
   border-color: transparent;
-  background-color: rgba(255, 255, 255, 0.5);
+  background: white;
   color: #756458;
 }
 
@@ -141,7 +118,6 @@ ul {
   transform: rotate(-45deg) translate(5px, -10px);
 }
 
-
 @media only screen and (min-width:750px) {
 
   /* 'burger' not displayed*/
@@ -154,13 +130,14 @@ ul {
     margin: 0;
     padding: 15px 0;
     width: 100%;
+    display: inline-block;
     position: relative;
     right: 0;
   }
 
   /*Items on menu are also an inline-block (rather then under each other)*/
   #menu li {
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -171,7 +148,7 @@ ul {
   background-color: #F4ECE7;
   color: black;
   font-family: Bahnschrift;
-  font-size: 5vw;
+  font-size: 2vw;
   text-align: center;
   border: 5px solid #E5BAA7;
   transition-duration: 0.4s;
@@ -195,15 +172,10 @@ h1 {
 
 .info {
   padding: 20px;
-
 }
 
 .about {
   padding: 20px;
-}
-
-#logo {
-  height: 15vh;
 }
 
 footer {
@@ -223,7 +195,6 @@ footer {
   justify-content: center;
   padding: 10px;
 }
-
 
 #bit {
   text-align: left;
@@ -286,19 +257,11 @@ footer {
   #item {
     width: 60vw;
   }
-
-  .layout {
-    display: grid;
-    grid-template-areas:
-      'logo'
-      'menu'
-      'about';
-    width: 10vw;
+  
+  .logo{
+    width:30vw;
   }
   
-  .glass{
-    width: 80vw;
-  }
 }
 
 @media only screen and (min-width:600px) {
@@ -345,21 +308,9 @@ footer {
     width: 80vw;
     margin-left: 20vw;
   }
-
-  .layout {
-    display: grid;
-    grid-template-areas:
-      'logo'
-      'menu'
-      'about';
-    width: 10vw;
+  .logo{
+    width:20vw;
   }
-
-.glass{
-  width: 70vw;
-}
-
-  
 }
 
 @media only screen and (min-width:768px) {
@@ -402,20 +353,9 @@ footer {
     grid-gap: 1vw;
     width: 80vw;
     margin-left: 20vw;
-
   }
-
-  .layout {
-    display: grid;
-    grid-template-areas:
-      'logo menu about';
-    width: 30vw;
-    margin-left: 30vw;
-  }
-
-  .glass {
-    width: 70vh;
-    margin-left: 21%;
+  .logo{
+    width:10vw;
   }
 }
 
@@ -464,17 +404,7 @@ footer {
     width: 80vw;
     margin-left: 20vw;
   }
-
-  .layout {
-    display: grid;
-    grid-template-areas:
-      'logo menu about';
-    width: 30vw;
-    margin-left: 30vw;
-  }
-
-  .glass {
-    width: 70vh;
-    margin-left: 33%;
+  .logo{
+    width:8vw;
   }
 }
