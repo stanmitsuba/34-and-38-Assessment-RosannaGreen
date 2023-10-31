@@ -40,11 +40,22 @@ body {
 }
 
 @keyframes boba {
-  0%,100% {left: 0%; top: 0%;}
 
-  50%{left: 50%; top: 100%;} 
+  0%,
+  100% {
+    left: 0%;
+    top: 0%;
+  }
 
- 75%{left: 75%; top: 50%;}
+  50% {
+    left: 50%;
+    top: 100%;
+  }
+
+  75% {
+    left: 75%;
+    top: 50%;
+  }
 
 }
 
@@ -197,6 +208,10 @@ h1 {
   font-family: Bahnschrift;
 }
 
+#tea {
+  text-align: center;
+}
+
 .info {
   padding: 20px;
 }
@@ -208,13 +223,15 @@ h1 {
 footer {
   background-color: #E5BAA7;
   padding: 3px;
-  height: 10vh;
+  height: 20vh;
 }
 
 #end {
   text-align: left;
   padding-left: 5px;
+  font-weight: bold;
 }
+
 
 .flex-box {
   display: flex;
@@ -229,14 +246,21 @@ footer {
 
 /* drinks */
 
-#item {
+.item {
   width: 20vw;
   border-radius: 2vw;
 }
 
+.align{
+  text-align: center;
+  display: block;
+}
 /* Media quaires */
 
 @media only screen and (max-width:600px) {
+  
+
+ 
   p {
     font-size: 6vw;
   }
@@ -253,6 +277,14 @@ footer {
   }
 
   #end {
+    font-size: 5.5vw;
+  }
+
+  #email {
+    font-size: 5.5vw;
+  }
+
+  #phone {
     font-size: 5.5vw;
   }
 
@@ -279,9 +311,12 @@ footer {
     grid-gap: 1vw;
     width: 80vw;
     margin-left: 20vw;
+    text-align: center;
+    font-family: Bahnschrift;
+    font-size: 5vw;
   }
 
-  #item {
+  .item {
     width: 60vw;
   }
 
@@ -293,10 +328,16 @@ footer {
     width: 50vw;
     margin-left: 20vw;
   }
-  .animation{
+
+  .animation {
     width: 80%;
     height: 80%;
-    position: left;
+  }
+  
+  p.align{
+    text-align: center;
+    display: block;
+    width: 200px;
   }
 }
 
@@ -311,6 +352,14 @@ footer {
   }
 
   #end {
+    font-size: 3.5vw;
+  }
+
+  #email {
+    font-size: 3.5vw;
+  }
+
+  #phone {
     font-size: 3.5vw;
   }
 
@@ -343,6 +392,9 @@ footer {
     grid-gap: 1vw;
     width: 80vw;
     margin-left: 30vw;
+    text-align: center;
+    font-family: Bahnschrift;
+    font-size: 1.25vw;
   }
 
   .logo {
@@ -353,11 +405,15 @@ footer {
     width: 50vw;
     margin-left: 25vw;
   }
-  
-  .animation{
-    position: left;
+
+  .animation {
     width: 80%;
     height: 80%;
+  }
+  
+  .align{
+    text-align: center;
+    display: block;
   }
 }
 
@@ -400,6 +456,9 @@ footer {
     grid-gap: 1vw;
     width: 80vw;
     margin-left: 30vw;
+    text-align: center;
+    font-family: Bahnschrift;
+    font-size: 3vw;
   }
 
   .logo {
@@ -410,10 +469,22 @@ footer {
     width: 50vw;
     margin-left: 25vw;
   }
-  
-  .animation{
+
+  .animation {
     width: 100%;
     height: 55%;
+  }
+
+  #end {
+    font-size: 2vw;
+  }
+
+  #email {
+    font-size: 2vw;
+  }
+
+  #phone {
+    font-size: 2vw;
   }
 }
 
@@ -428,6 +499,14 @@ footer {
   }
 
   #end {
+    font-size: 1.5vw;
+  }
+
+  #email {
+    font-size: 1.5vw;
+  }
+
+  #phone {
     font-size: 1.5vw;
   }
 
@@ -461,6 +540,9 @@ footer {
     grid-gap: 1vw;
     width: 80vw;
     margin-left: 20vw;
+    text-align: center;
+    font-family: Bahnschrift;
+    font-size: 1.5vw;
   }
 
   .logo {
@@ -471,7 +553,8 @@ footer {
     width: 50vw;
     margin-left: 25vw;
   }
-  .animation{
+
+  .animation {
     width: 100%;
     height: 65%;
   }
